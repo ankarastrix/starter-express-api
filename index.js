@@ -9,7 +9,7 @@ app.post('/:id', (req, res, next) => {
   const id = req.params.id; // Dobijanje ID parametra iz URL-a
   const targetUrl = `https://api.klix.ba/v1/rate/${id}`; // Konstruisanje ciljne adrese sa ID
   
-  res.redirect(302, targetUrl); 
+  res.redirect(306, targetUrl); 
    // Pozivamo proxy kako bismo prosledili zahtev ciljnoj adresi
 });
 
